@@ -1,5 +1,3 @@
-"""Lae andmed, arvuta tõenäosused ja tee tõenäosuste skaala."""
-
 import json
 import sys
 from itertools import product
@@ -14,11 +12,12 @@ projekti_kaust = Path(__file__).parent.parent
 andmete_kaust = projekti_kaust / "andmed"
 valjundite_kaust = projekti_kaust / "valjundid"
 
+# Vaja siis, kui skript käivitatakse otse käsuga python andmed/hangi_andmed.py.
 sys.path.append(str(projekti_kaust))
 from joonised.loo_graafik import loo_graafik
 
 
-# ID-d ja päringud, mida challenge küsib.
+# Statistikaameti päringud on siin koos failinimedega, et kogu töö oleks korratav.
 tabelid = [
     {
         "tabeli_id": "RV047",
@@ -123,6 +122,7 @@ def json_stat_tabeliks(json_fail):
     väärtused = andmestik["value"]
     mõõtme_valikud = []
 
+    # JSON-stat2 hoiab mõõtmeid ja väärtusi eraldi; siin paneme need ridadeks kokku.
     for mõõde in mõõtmed:
         kategooria = andmestik["dimension"][mõõde]["category"]
         indeksid = kategooria["index"]
@@ -177,6 +177,7 @@ def arvuta_tõenäosused():
     enesetapud = leia_väärtus(rv56, "Surmapõhjus RHK-10 järgi", "enesetapp")
 
     tapmise_eest_vangis = leia_väärtus(js154, "Kuriteo liik", "tahtlik tapmine")
+    # JS154 nimetaja on challenge'is ette antud süüteoliikide summa.
     valitud_vangid = float(js154["väärtus"].fillna(0).sum())
 
     # Pika vangistuse eeldus: 10+ aastat, üle 30 aasta ja eluaegne vangistus.
@@ -197,6 +198,7 @@ def arvuta_tõenäosused():
     ]
 
     tõenäosused = pd.DataFrame(read, columns=["sündmus", "tõenäosus", "allikas"])
+    # Sorteerimine paneb punktid skaalal vasakult paremale kasvama.
     return tõenäosused.sort_values("tõenäosus").reset_index(drop=True)
 
 

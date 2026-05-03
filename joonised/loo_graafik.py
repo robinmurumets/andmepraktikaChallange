@@ -1,5 +1,3 @@
-"""Tee arvutatud tõenäosustest lihtne x-telje skaala."""
-
 import matplotlib.pyplot as plt
 
 
@@ -21,6 +19,7 @@ def loo_graafik(tõenäosused, pildi_fail):
     telg.scatter(tõenäosused["tõenäosus"], y_kohad, s=105, c=värvid, zorder=3)
     telg.axhline(0, color="#2D3142", linewidth=1.6)
 
+    # Sildid käivad kordamööda üles ja alla, et need üksteise peale ei läheks.
     for järjekord, rida in enumerate(tõenäosused.itertuples()):
         tekst = f"{rida.sündmus}\n{vorminda_tõenäosus(rida.tõenäosus)}"
         nihke_suund = 1 if järjekord % 2 == 0 else -1
@@ -35,6 +34,7 @@ def loo_graafik(tõenäosused, pildi_fail):
             arrowprops={"arrowstyle": "-", "color": "#4F5D75", "linewidth": 0.8},
         )
 
+    # Skaala on meelega 0-1, sest tõenäosus jääb sellesse vahemikku.
     telg.set_xlim(0, 1)
     telg.set_ylim(-0.55, 0.55)
     telg.set_yticks([])
