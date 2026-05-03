@@ -1,0 +1,94 @@
+{
+  "class": "dataset",
+  "label": "RV56: SURNUD | Aasta, Surmapõhjus RHK-10 järgi, Sugu ning Vanuserühm",
+  "source": "Statistikaamet",
+  "updated": "2007-06-21T06:00:00Z",
+  "id": [
+    "Aasta",
+    "Surmapõhjus RHK-10 järgi",
+    "Sugu",
+    "Vanuserühm"
+  ],
+  "size": [
+    1,
+    2,
+    1,
+    1
+  ],
+  "dimension": {
+    "Aasta": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Aasta",
+      "category": {
+        "index": {
+          "2024": 0
+        },
+        "label": {
+          "2024": "2024"
+        }
+      }
+    },
+    "Surmapõhjus RHK-10 järgi": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Surmapõhjus RHK-10 järgi",
+      "category": {
+        "index": {
+          "1": 0,
+          "82": 1
+        },
+        "label": {
+          "1": "Kõik põhjused",
+          "82": "..enesetapp (X60-X84)"
+        }
+      }
+    },
+    "Sugu": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Sugu",
+      "category": {
+        "index": {
+          "1": 0
+        },
+        "label": {
+          "1": "Mehed ja naised"
+        }
+      }
+    },
+    "Vanuserühm": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Vanuserühm",
+      "category": {
+        "index": {
+          "1": 0
+        },
+        "label": {
+          "1": "Vanuserühmad kokku"
+        }
+      }
+    }
+  },
+  "value": [
+    15756,
+    171
+  ],
+  "role": {
+    "time": [
+      "Aasta"
+    ]
+  },
+  "version": "2.0",
+  "extension": {
+    "px": {
+      "tableid": "RV56",
+      "decimals": 0
+    }
+  }
+}

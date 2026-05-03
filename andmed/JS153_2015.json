@@ -1,0 +1,83 @@
+{
+  "class": "dataset",
+  "label": "JS153: VANGLAASUTUSTES VIIBIVAD SÜÜDIMÕISTETUD, 31. DETSEMBER | Karistusaeg ning Aasta",
+  "source": "Statistikaamet",
+  "updated": "2016-04-22T05:00:00Z",
+  "id": [
+    "Karistusaeg",
+    "Aasta"
+  ],
+  "size": [
+    9,
+    1
+  ],
+  "dimension": {
+    "Karistusaeg": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Karistusaeg",
+      "category": {
+        "index": {
+          "1": 0,
+          "2": 1,
+          "3": 2,
+          "4": 3,
+          "5": 4,
+          "6": 5,
+          "7": 6,
+          "8": 7,
+          "9": 8
+        },
+        "label": {
+          "1": "Kuni 1 aasta",
+          "2": "1 kuni alla 2 aasta",
+          "3": "2 kuni alla 3 aasta",
+          "4": "3 kuni alla 5 aasta",
+          "5": "5 kuni alla 10 aasta",
+          "6": "10 kuni alla 15 aasta",
+          "7": "15 kuni 30 aastat",
+          "8": "Üle 30 aasta",
+          "9": "Eluaegne vanglakaristus*"
+        }
+      }
+    },
+    "Aasta": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Aasta",
+      "category": {
+        "index": {
+          "2015": 0
+        },
+        "label": {
+          "2015": "2015"
+        }
+      }
+    }
+  },
+  "value": [
+    196,
+    281,
+    239,
+    508,
+    555,
+    200,
+    67,
+    1,
+    41
+  ],
+  "role": {
+    "time": [
+      "Aasta"
+    ]
+  },
+  "version": "2.0",
+  "extension": {
+    "px": {
+      "tableid": "JS153",
+      "decimals": 0
+    }
+  }
+}

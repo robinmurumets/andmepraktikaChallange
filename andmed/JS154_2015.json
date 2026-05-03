@@ -1,0 +1,87 @@
+{
+  "class": "dataset",
+  "label": "JS154: VANGLAASUTUSTES VIIBIVAD SÜÜDIMÕISTETUD, 31. DETSEMBER | Kuriteo liik ning Aasta",
+  "source": "Statistikaamet",
+  "updated": "2016-04-22T05:00:00Z",
+  "id": [
+    "Kuriteo liik",
+    "Aasta"
+  ],
+  "size": [
+    9,
+    1
+  ],
+  "dimension": {
+    "Kuriteo liik": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Kuriteo liik",
+      "category": {
+        "index": {
+          "2": 0,
+          "3": 1,
+          "4": 2,
+          "5": 3,
+          "7": 4,
+          "8": 5,
+          "9": 6,
+          "10": 7,
+          "12": 8
+        },
+        "label": {
+          "2": "..tahtlik tapmine ja tapmiskatse",
+          "3": "..tahtlik raske kehavigastuse tekitamine",
+          "4": "..vägistamine ja vägistamiskatse",
+          "5": "Narkootikumidega seotud süüteod*",
+          "7": "..vargus",
+          "8": "..röövimine",
+          "9": "Kuriteod õigusemõistmise vastu",
+          "10": "Valitsemiskorravastased kuriteod",
+          "12": "..narkokuriteod*"
+        }
+      }
+    },
+    "Aasta": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Aasta",
+      "category": {
+        "index": {
+          "2015": 0
+        },
+        "label": {
+          "2015": "2015"
+        }
+      }
+    }
+  },
+  "value": [
+    434,
+    76,
+    90,
+    619,
+    217,
+    258,
+    3,
+    null,
+    null
+  ],
+  "status": {
+    "7": ".",
+    "8": "."
+  },
+  "role": {
+    "time": [
+      "Aasta"
+    ]
+  },
+  "version": "2.0",
+  "extension": {
+    "px": {
+      "tableid": "JS154",
+      "decimals": 0
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "class": "dataset",
+  "label": "RV047: ABIELUD JA LAHUTUSED | Aasta ning Näitaja",
+  "source": "Statistikaamet",
+  "updated": "2012-01-13T07:00:00Z",
+  "id": [
+    "Aasta",
+    "Näitaja"
+  ],
+  "size": [
+    1,
+    2
+  ],
+  "dimension": {
+    "Aasta": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Aasta",
+      "category": {
+        "index": {
+          "2025": 0
+        },
+        "label": {
+          "2025": "2025"
+        }
+      }
+    },
+    "Näitaja": {
+      "extension": {
+        "show": "value"
+      },
+      "label": "Näitaja",
+      "category": {
+        "index": {
+          "1": 0,
+          "5": 1
+        },
+        "label": {
+          "1": "Abielusid kokku",
+          "5": "Lahutusi kokku"
+        }
+      }
+    }
+  },
+  "value": [
+    5998,
+    3062
+  ],
+  "role": {
+    "time": [
+      "Aasta"
+    ]
+  },
+  "version": "2.0",
+  "extension": {
+    "px": {
+      "tableid": "RV047",
+      "decimals": 0
+    }
+  }
+}
